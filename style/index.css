@@ -1,6 +1,13 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+body {
+  background-color: #F1F2F3; 
+  /* #F1F2F3 light grey 
+  #6d6e71 dark grey
+  */
+}
+
 .md-container {
   max-width: 800px;
   padding-top: 2rem;
