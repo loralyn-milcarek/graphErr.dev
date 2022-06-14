@@ -1,37 +1,30 @@
-import Head from 'next/head'
-import { Container, Row, Card, Button, Nav } from 'react-bootstrap'
-
-
+import Head from 'next/head';
+import { Container, Row, Card, Button, Nav } from 'react-bootstrap';
+import Image from 'next/image';
+import Link from 'next/link';
+import NavBar from '../nav.jsx'
 
 
 export default function Home() {
   return (
-    <Container className="md-container" style={{backgroundColor: "#6d6e71"}}>
+    <Container className="md-container">
       <Head>
         <title>ReactJS with react-bootstrap</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/favicon-32x32.png"/>
       </Head>
       
-      <Nav className="justify-content-end" style={{color: "#18341a"}} variant="pills" activeKey="/install">
-        <Nav.Item>
-          <Nav.Link href="/home" style={{color: "#18341a"}}>Links</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-        <Nav.Link eventKey="link-1" style={{color: "#18341a"}}>Team</Nav.Link>
-          </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-2" style={{color: "#18341a"}}>Demo</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="/install" style={{backgroundColor: "#59af95"}}>Install graphErr</Nav.Link>
-        </Nav.Item>
-      </Nav>
-
+      <NavBar/>
 
       <Container>
-        <h1 style={{color: "#18341a"}}>
-          graphErr
-        </h1>
+        {/* <h1 style={{color: "#18341a"}}>graphErr</h1> */}
+        {/* <div>           
+        </div>  */}
+        <div>
+          <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="240" height="120"/>
+        </div>
+        
+        {/* <img src={graphErrLogo} alt="graphErr Logo"/> */}
+
         <p style={{color: "#18341a"}}>
           Descriptive error handling library for GraphQL + Deno
         </p>
@@ -44,101 +37,102 @@ export default function Home() {
           {/* <Card>
           <Card.Header>first one</Card.Header>
           <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
-                {' '}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                erat a ante.{' '}
-              </p>
-              <footer className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
-            </blockquote>
+          <blockquote className="blockquote mb-0">
+          <p>
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+          erat a ante.{' '}
+          </p>
+          <footer className="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+          </footer>
+          </blockquote>
           </Card.Body>
-        </Card>
-        <Card>
+          </Card>
+          <Card>
           <Card.Header>other one</Card.Header>
           <Card.Body>
             <blockquote className="blockquote mb-0">
-              <p>
-                {' '}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                erat a ante.{' '}
-              </p>
-              <footer className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
+            <p>
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+            erat a ante.{' '}
+            </p>
+            <footer className="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+            </footer>
             </blockquote>
-          </Card.Body>
-        </Card> */}
+            </Card.Body>
+          </Card> */}
 
 
           {/* <Row className="justify-content-md-between">
             <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>About</Card.Title>
-                <Card.Text>
-                  short paragraph about graphErr
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/docs">
-                  More &rarr;
-                </Button>
-              </Card.Body>
+            <Card.Body>
+            <Card.Title>About</Card.Title>
+            <Card.Text>
+            short paragraph about graphErr
+            </Card.Text>
+            <Button variant="primary" href="https://nextjs.org/docs">
+            More &rarr;
+            </Button>
+            </Card.Body>
             </Card>
             <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Learn</Card.Title>
-                <Card.Text>
+            <Card.Body>
+            <Card.Title>Learn</Card.Title>
+            <Card.Text>
                   Learn about Next.js in an interactive course with quizzes!
-                </Card.Text>
+                  </Card.Text>
                 <Button variant="primary" href="https://nextjs.org/learn">
-                  More &rarr;
+                More &rarr;
                 </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
+                </Card.Body>
+                </Card>
+                </Row>
+                <Row className="justify-content-md-between">
+                <Card className="sml-card">
+                <Card.Body>
                 <Card.Title>Examples</Card.Title>
                 <Card.Text>
                   Discover and deploy boilerplate example Next.js projects.
-                </Card.Text>
-                <Button
+                  </Card.Text>
+                  <Button
                   variant="primary"
                   href="https://github.com/vercel/next.js/tree/canary/examples"
-                >
+                  >
                   More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
+                  </Button>
+                  </Card.Body>
+                  </Card>
+                  <Card className="sml-card">
               <Card.Body>
                 <Card.Title>Deploy</Card.Title>
                 <Card.Text>
                   Instantly deploy your Next.js site to a public URL with
                   Vercel.
-                </Card.Text>
-                <Button
+                  </Card.Text>
+                  <Button
                   variant="primary"
                   href="https://vercel.com/new?utm_source=github&utm_medium=example&utm_campaign=next-example"
-                >
+                  >
                   More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row> */}
+                  </Button>
+                  </Card.Body>
+                  </Card>
+                </Row> */}
         </Container>
       </Container>
 
       <footer className="cntr-footer">
+        <Image src="/graphErrLogo.svg" alt="graphErr Logo Type" width="64" height="64"/>
         <a
           href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" />
+          {/* Powered by{' '}
+          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" /> */}
         </a>
       </footer>
     </Container>
