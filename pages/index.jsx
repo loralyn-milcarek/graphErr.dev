@@ -1,9 +1,22 @@
 import Head from 'next/head';
-import { Container, Row, Card, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Nav } from 'react-bootstrap';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import NavBar from '../nav.jsx'
 
+
+/* 
+<div>
+      <a href="#secion">Click</a>
+
+      <section
+        style={{ marginTop: "1000px", marginBottom: "1000px" }}
+        id="secion"
+      >
+        <h1>Test</h1>
+      </section>
+    </div>
+*/
 
 export default function Home() {
   return (
@@ -19,20 +32,27 @@ export default function Home() {
         {/* <h1 style={{color: "#18341a"}}>graphErr</h1> */}
         {/* <div>           
         </div>  */}
-        <div>
-          <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="240" height="120"/>
-        </div>
+        <Container>
+          <Row style={{marginTop: 4 + 'em'}}>
+            <Col xs={5}>
+              <Image src="/graphErrLogo.svg" alt="graphErr Logo" width="300" height="150"/>
+            </Col>
+            <Col xs={6} style={{paddingTop: 2 + 'em', fontSize: 1.5 + 'em'}}>
+            Descriptive error handling library for GraphQL + Deno
+            </Col>
+          </Row>
+          {/* <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="240" height="120"/> */}
+        </Container>
         
         {/* <img src={graphErrLogo} alt="graphErr Logo"/> */}
 
         <p style={{color: "#18341a"}}>
-          Descriptive error handling library for GraphQL + Deno
         </p>
         <Container>
         <Container className="grid-gap">
-          <Card body style={{padding: 4 + 'em', marginTop: 4 + 'em', color: 'white', backgroundColor: '#59af95'}}>Here is a paragraph about graphErr. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
-          <Card body style={{padding: 4 + 'em', marginTop: 4 + 'em', color: 'white', backgroundColor: '#59af95'}}>This is the problem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Card>
-          <Card body style={{padding: 4 + 'em', marginTop: 4 + 'em', color: 'white', backgroundColor: '#59af95'}}>Wow, we have the solution.</Card>
+          <Card className="cards">Here is a paragraph about graphErr. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
+          <Card className="cards">This is the problem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Card>
+          <Card className="cards">Wow, we have the solution.</Card>
           </Container>
           {/* <Card>
           <Card.Header>first one</Card.Header>
@@ -122,10 +142,19 @@ export default function Home() {
                   </Card>
                 </Row> */}
         </Container>
+        <Container id="team">
+          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>team graphErr contact info</Card>
+        </Container>
+        <Container id="links">
+          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>These are the links. Can we jump to them?</Card>
+        </Container>
+
       </Container>
 
+    
+
       <footer className="cntr-footer">
-        <Image src="/graphErrLogo.svg" alt="graphErr Logo Type" width="64" height="64"/>
+        <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="100" height="100"/>
         <a
           href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
           target="_blank"

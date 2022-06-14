@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Container, Row, Card, Button, Nav } from 'react-bootstrap';
+import NavBar from '../nav.jsx'
 
 export default function Demo() {
   return (

@@ -1,14 +1,14 @@
 import { Nav } from 'react-bootstrap';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function NavBar() {
   return (
     <Nav className="justify-content-end" style={{color: "#18341a"}} variant="pills" activeKey="/install">
     <Nav.Item>
-      <Nav.Link href="/home" style={{color: "#18341a"}}>Links</Nav.Link>
+      <Nav.Link href="/#links" style={{color: "#18341a"}}>Links</Nav.Link>
     </Nav.Item>
     <Nav.Item>
-    <Nav.Link eventKey="link-1" style={{color: "#18341a"}}>Team</Nav.Link>
+    <Nav.Link href="/#team" eventKey="team" style={{color: "#18341a"}}>Team</Nav.Link>
       </Nav.Item>
     <Nav.Item>
       <Nav.Link href="/demo" eventKey="link-2" style={{color: "#18341a"}}>Demo</Nav.Link>
