@@ -54,100 +54,56 @@ export default function Home() {
           <Card className="cards">This is the problem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Card>
           <Card className="cards">Wow, we have the solution.</Card>
           </Container>
-          {/* <Card>
-          <Card.Header>first one</Card.Header>
-          <Card.Body>
-          <blockquote className="blockquote mb-0">
-          <p>
-          {' '}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-          erat a ante.{' '}
-          </p>
-          <footer className="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-          </blockquote>
-          </Card.Body>
-          </Card>
-          <Card>
-          <Card.Header>other one</Card.Header>
-          <Card.Body>
-            <blockquote className="blockquote mb-0">
-            <p>
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.{' '}
-            </p>
-            <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-            </footer>
-            </blockquote>
-            </Card.Body>
-          </Card> */}
 
+        </Container>
 
-          {/* <Row className="justify-content-md-between">
-            <Card className="sml-card">
-            <Card.Body>
-            <Card.Title>About</Card.Title>
-            <Card.Text>
-            short paragraph about graphErr
-            </Card.Text>
-            <Button variant="primary" href="https://nextjs.org/docs">
-            More &rarr;
-            </Button>
-            </Card.Body>
-            </Card>
-            <Card className="sml-card">
-            <Card.Body>
-            <Card.Title>Learn</Card.Title>
-            <Card.Text>
-                  Learn about Next.js in an interactive course with quizzes!
-                  </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/learn">
-                More &rarr;
-                </Button>
-                </Card.Body>
-                </Card>
-                </Row>
-                <Row className="justify-content-md-between">
-                <Card className="sml-card">
-                <Card.Body>
-                <Card.Title>Examples</Card.Title>
-                <Card.Text>
-                  Discover and deploy boilerplate example Next.js projects.
-                  </Card.Text>
-                  <Button
-                  variant="primary"
-                  href="https://github.com/vercel/next.js/tree/canary/examples"
-                  >
-                  More &rarr;
-                  </Button>
-                  </Card.Body>
-                  </Card>
-                  <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Deploy</Card.Title>
-                <Card.Text>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                  </Card.Text>
-                  <Button
-                  variant="primary"
-                  href="https://vercel.com/new?utm_source=github&utm_medium=example&utm_campaign=next-example"
-                  >
-                  More &rarr;
-                  </Button>
-                  </Card.Body>
-                  </Card>
-                </Row> */}
-        </Container>
-        <Container id="team">
-          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>team graphErr contact info</Card>
-        </Container>
         <Container id="links">
           <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>These are the links. Can we jump to them?</Card>
         </Container>
+
+        <Container id="team" style={{}}>
+          <Card className="text-center" style={{marginTop: 8 + 'em', marginBottom: 1 + 'em', color: '18341a', fontSize: 2 + 'em', backgroundColor: '#F5F7F7', border: 'none'}}>
+            We are Team GraphErr
+          </Card>
+          <Row style={{display: 'flex', justifyContent: 'space-between', marginBottom: 8 + 'em'}}>
+            
+          
+            <Card style={{width: 125 + 'px', display: 'flex', justifyContent: 'space-around', border: 'none', backgroundColor: '#F5F7F7'}}>
+              <Card.Img variant="top" src="/lm.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/avitacos">Avi</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card style={{width: 125 + 'px', display: 'flex', justifyContent: 'space-around', border: 'none', backgroundColor: '#F5F7F7'}}>
+              <Card.Img variant="top" src="/lm.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/loralyn-milcarek">Loralyn</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card style={{width: 125 + 'px', display: 'flex', justifyContent: 'space-around', border: 'none', backgroundColor: '#F5F7F7'}}>
+              <Card.Img variant="top" src="/lm.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/maxwellcook">Max</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card style={{width: 125 + 'px', display: 'flex', justifyContent: 'space-around', border: 'none', backgroundColor: '#F5F7F7'}}>
+              <Card.Img variant="top" src="/lm.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/thomasseo1">Thomas</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card style={{width: 125 + 'px', display: 'flex', border: 'none', backgroundColor: '#F5F7F7'}}>
+              <Card.Img variant="top" src="/cs.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/claysawyer">Clay</Card.Link>
+              </Card.Body>
+              </Card>
+
+
+          </Row>
+        </Container>
+
+
 
       </Container>
 
