@@ -5,6 +5,9 @@ export default function NavBar() {
   return (
     <Nav className="justify-content-end" style={{color: "#18341a"}} variant="pills" activeKey="/install">
     <Nav.Item>
+      <Nav.Link href="/" className="justify-content-start" style={{color: "#18341a", position: 'flex', alignItems: 'start'}}>Home</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
       <Nav.Link href="/#links" style={{color: "#18341a"}}>Links</Nav.Link>
     </Nav.Item>
     <Nav.Item>

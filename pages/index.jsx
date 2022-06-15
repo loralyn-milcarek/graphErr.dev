@@ -34,8 +34,8 @@ export default function Home() {
         </div>  */}
         <Container>
           <Row style={{marginTop: 4 + 'em'}}>
-            <Col xs={5}>
-              <Image src="/graphErrLogo.svg" alt="graphErr Logo" width="300" height="150"/>
+            <Col xs={5} style={{paddingBottom: .5 + 'em'}}>
+              <Image src="/graphErrLogo.svg" alt="graphErr Logo" width="300" height="180" />
             </Col>
             <Col xs={6} style={{paddingTop: 2 + 'em', fontSize: 1.5 + 'em'}}>
             Descriptive error handling library for GraphQL + Deno
@@ -50,104 +50,61 @@ export default function Home() {
         </p>
         <Container>
         <Container className="grid-gap">
-          <Card className="cards">Here is a paragraph about graphErr. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
-          <Card className="cards">This is the problem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Card>
+          <Card className="cards">The Problem: GraphQL is a strongly typed, introspective query language that solves the standard REST response issue of over- and under-fetching data. Even as multi-system queries are abstracted away, some of the benefits of the static, explicit architecture of a RESTful API are lost with GraphQL…
+          </Card>
+          <Card className="cards">Solution: There is currently no lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. graphErr is an un-opinionated, lightweight library that provides descriptive, debuggable error data to developers working with GraphQL in Deno. In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr will programmatically analyze your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.</Card>
           <Card className="cards">Wow, we have the solution.</Card>
           </Container>
-          {/* <Card>
-          <Card.Header>first one</Card.Header>
-          <Card.Body>
-          <blockquote className="blockquote mb-0">
-          <p>
-          {' '}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-          erat a ante.{' '}
-          </p>
-          <footer className="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-          </blockquote>
-          </Card.Body>
-          </Card>
-          <Card>
-          <Card.Header>other one</Card.Header>
-          <Card.Body>
-            <blockquote className="blockquote mb-0">
-            <p>
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-            erat a ante.{' '}
-            </p>
-            <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-            </footer>
-            </blockquote>
-            </Card.Body>
-          </Card> */}
 
+        </Container>
 
-          {/* <Row className="justify-content-md-between">
-            <Card className="sml-card">
-            <Card.Body>
-            <Card.Title>About</Card.Title>
-            <Card.Text>
-            short paragraph about graphErr
-            </Card.Text>
-            <Button variant="primary" href="https://nextjs.org/docs">
-            More &rarr;
-            </Button>
-            </Card.Body>
-            </Card>
-            <Card className="sml-card">
-            <Card.Body>
-            <Card.Title>Learn</Card.Title>
-            <Card.Text>
-                  Learn about Next.js in an interactive course with quizzes!
-                  </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/learn">
-                More &rarr;
-                </Button>
-                </Card.Body>
-                </Card>
-                </Row>
-                <Row className="justify-content-md-between">
-                <Card className="sml-card">
-                <Card.Body>
-                <Card.Title>Examples</Card.Title>
-                <Card.Text>
-                  Discover and deploy boilerplate example Next.js projects.
-                  </Card.Text>
-                  <Button
-                  variant="primary"
-                  href="https://github.com/vercel/next.js/tree/canary/examples"
-                  >
-                  More &rarr;
-                  </Button>
-                  </Card.Body>
-                  </Card>
-                  <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Deploy</Card.Title>
-                <Card.Text>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                  </Card.Text>
-                  <Button
-                  variant="primary"
-                  href="https://vercel.com/new?utm_source=github&utm_medium=example&utm_campaign=next-example"
-                  >
-                  More &rarr;
-                  </Button>
-                  </Card.Body>
-                  </Card>
-                </Row> */}
-        </Container>
-        <Container id="team">
-          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>team graphErr contact info</Card>
-        </Container>
         <Container id="links">
           <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>These are the links. Can we jump to them?</Card>
         </Container>
+
+        <Container id="team">
+          <Card className="text-center" style={{marginTop: 8 + 'em', marginBottom: 1 + 'em', color: '18341a', fontSize: 2 + 'em', backgroundColor: '#F5F7F7', border: 'none'}}>
+            We are Team GraphErr
+          </Card>
+
+          <Row style={{display: 'flex', justifyContent: 'space-around', marginBottom: 8 + 'em'}}>
+              <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
+              <Card.Img variant="top" src="/ak.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/avitacos">Avi</Card.Link>
+              </Card.Body>
+              </Card>
+          
+            <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
+              <Card.Img variant="top" src="/lm.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/loralyn-milcarek">Loralyn</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
+              <Card.Img variant="top" src="/mc.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/maxwellcook">Max</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
+              <Card.Img variant="top" src="/ts.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/thomasseo1">Thomas</Card.Link>
+              </Card.Body>
+            </Card>
+            <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
+              <Card.Img variant="top" src="/cs.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
+              <Card.Body>
+                <Card.Link href="https://github.com/claysawyer">Clay</Card.Link>
+              </Card.Body>
+            </Card>
+
+
+          </Row>
+        </Container>
+
+
 
       </Container>
 
