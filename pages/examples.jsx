@@ -4,11 +4,11 @@ import NavBar from '../components/nav.jsx'
 import Image from 'next/image';
 import FooterNav from '../components/footer.jsx';
 
-export default function Demo() {
+export default function Examples() {
   return (
     <Container className="lg-container">
       <Head>
-        <title>graphErr Demo</title>
+        <title>graphErr in action</title>
         <link rel="icon" href="/graphErrLogo.svg"/>
       </Head>
 
@@ -19,7 +19,7 @@ export default function Demo() {
         <Container className="grid-gap">
           <Card className="demo">
                 <h1>
-                  GraphErr Demo
+                  GraphErr in Action
                 </h1>
                 <Card.Text>
                 <br/>
@@ -81,16 +81,6 @@ export default function Demo() {
 
           <br/>
           <hr/>
-{/*             
-            Same query without graphErr:
-            <Image src="/qr1.png" alt="example query response" width="300" height="180"/>
-
-            Example #2 - graphErr response for a native GraphQL error:
-            <Image src="/qr1.png" alt="example query response" width="300" height="180" />
-
-            Same query without graphErr:
-            <Image src="/qr1.png" alt="example query response" width="300" height="180" /> */}
-
   
 
         </Container>
