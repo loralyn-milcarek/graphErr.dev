@@ -38,6 +38,10 @@ body {
   margin-top: 24px;
 }
 
+.install:hover {
+  background-color: #59af95;
+}
+
 pre {
   background-color: #dcf2eb;
   border-radius: 10px;
