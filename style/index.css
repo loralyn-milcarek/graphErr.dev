@@ -3,21 +3,18 @@
 
 body {
   background-color: #F5F7F7; 
-  /* #F1F2F3 light grey 
-  #6d6e71 dark grey
-  */
+  /* background-color: #dcf2eb; */
   font-family: acumin-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
 }
-/* style={{padding: 4 + 'em', marginTop: 4 + 'em', border: 'none', 
-  borderRadius: "20 px", color: '#18341a', backgroundColor: '#dcf2eb'}} */
 .cards {
   padding: 4em 2em 4em 2em;
   margin-top: 4em;
   border: none;
   color: #18341a;
   background-color: #dcf2eb;
+  /* background-color: #F5F7F7;  */
   border-radius: 20px;
 }
 
