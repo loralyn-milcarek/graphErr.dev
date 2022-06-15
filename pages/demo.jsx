@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Container, Row, Card, Button, Nav } from 'react-bootstrap';
-import NavBar from '../nav.jsx'
+import NavBar from '../components/nav.jsx'
 
 export default function Demo() {
   return (
@@ -12,7 +12,23 @@ export default function Demo() {
 
       <NavBar/>
 
-        <div>this is the demo page</div>
+        <div>
+          {/* header? */}
+        </div>
+        <Container className="grid-gap">
+          <Card className="cards"> Here's is that demo 
+          </Card>
+          <div>
+            add a screenshot demo stuff 
+          </div>
+          <Card className="cards"> Here is somemore demo stuff
+          </Card>
+          <div>
+            add a screenshot demo stuff 
+          </div>
+
+        </Container>
+        
       </Container>
   )
 }
