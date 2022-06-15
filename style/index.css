@@ -10,6 +10,20 @@ body {
 }
 .cards {
   padding: 4em 2em 4em 2em;
+  margin: 4em 0 4em 0;
+  border: none;
+  color: #18341a;
+  background-color: #dcf2eb;
+  /* background-color: #F5F7F7;  */
+  border-radius: 20px;
+}
+
+.ss {
+  margin: 40px;
+}
+
+.demo {
+  padding: 2em 2em  2em;
   margin-top: 4em;
   border: none;
   color: #18341a;
@@ -18,8 +32,17 @@ body {
   border-radius: 20px;
 }
 
+.install {
+  background-color: #59af95;
+  border: none;
+  font-family: acumin-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 24px;
+}
+
 pre {
-  background-color: #F5F7F7;
+  background-color: #dcf2eb;
   border-radius: 10px;
   max-width: 300px;
   margin: 8px 0 8px 0;

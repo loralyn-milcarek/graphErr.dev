@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, Nav } from 'react-bootstrap';
 import Image from 'next/image';
 // import Link from 'next/link';
 import NavBar from '../components/nav.jsx'
+import FooterNav from '../components/footer.jsx';
 
 export default function Home() {
   return (
@@ -142,46 +143,7 @@ export default function Home() {
         </Container>
 
       </Container>
-
-    
-
-      <footer className="cntr-footer">
-        {/* <p style={{fontSize: '2 em'}}>Connect with graphErr
-        <br/>
-        </p>
-        <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="100" height="100"/>
-        <a href="https://github.com/oslabs-beta/graphErr" style={{margin: 12 + 'px'}}>
-          <Image src="/gh.png" width="22px" height="22px"/>
-        </a>
-        <a href="https://linkedin.com/in/grapherr" style={{margin: 12 + 'px'}}>
-          <Image src="/li.png" width="26px" height="22px"/>
-        </a>
-        <a href="https://deno.land" style={{margin: 12 + 'px'}}>
-          <Image src="/li.png" width="22px" height="22px"/>
-        </a> */}
-
-
-<Nav className="justify-content-center" activeKey="/home">
-        <Nav.Item>
-          Connect with graphErr: 
-        </Nav.Item>
-        <Nav.Item>
-          <a href="https://github.com/oslabs-beta/graphErr" style={{margin: 12 + 'px'}}>
-            <Image src="/gh.png" width="22px" height="22px"/>
-          </a>
-        </Nav.Item>
-        <Nav.Item>
-        <a href="https://linkedin.com/company/grapherr" style={{margin: 12 + 'px'}}>
-          <Image src="/li.png" width="26px" height="22px"/>
-        </a>
-        </Nav.Item>
-        <Nav.Item>
-        <a href="https://deno.land" style={{margin: 12 + 'px'}}>
-          <Image src="/de.png" width="26px" height="26px"/>
-        </a>
-        </Nav.Item>
-      </Nav>
-      </footer>
+      <FooterNav/>
 
     </Container>
   )

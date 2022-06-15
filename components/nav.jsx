@@ -17,7 +17,7 @@ export default function NavBar() {
       <Nav.Link href="/demo" eventKey="demo" style={{color: "#18341a"}}>Demo</Nav.Link>
     </Nav.Item>
     <Nav.Item>
-      <Nav.Link href="https://deno.land" eventKey="/install" style={{backgroundColor: "#59af95"}}>Install graphErr</Nav.Link>
+      <Nav.Link href="https://deno.land/x/grapherr" eventKey="/install" style={{backgroundColor: "#59af95"}}>Install graphErr</Nav.Link>
     </Nav.Item>
     </Nav>
   )
