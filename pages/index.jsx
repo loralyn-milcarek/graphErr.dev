@@ -68,7 +68,6 @@ export default function Home() {
         {/* <Container id="links" className='link'>
           <Card body style={{padding: 8 + 'em ' + 1 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95', border: 'none', borderRadius: '20px'}}>These are the links!</Card>
         </Container> */}
-
         <Container id="team" style={{backgroundColor: '#dcf2eb', borderRadius: 20 + 'px', paddingTop: 1 + 'em', paddingBottom: 1 + 'em', marginTop: 12 + 'em'}}>
           <Card className="text-center" style={{marginTop: 8 + 'em', marginBottom: 2 + 'em', color: '#18341a', fontSize: 2 + 'em', backgroundColor: '#dcf2eb', border: 'none'}}>
             We are Team GraphErr
