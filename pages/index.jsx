@@ -2,28 +2,16 @@ import Head from 'next/head';
 import { Container, Row, Col, Card, Button, Nav } from 'react-bootstrap';
 import Image from 'next/image';
 // import Link from 'next/link';
-import NavBar from '../nav.jsx'
-
-
-/* 
-<div>
-      <a href="#secion">Click</a>
-
-      <section
-        style={{ marginTop: "1000px", marginBottom: "1000px" }}
-        id="secion"
-      >
-        <h1>Test</h1>
-      </section>
-    </div>
-*/
+import NavBar from '../components/nav.jsx'
 
 export default function Home() {
   return (
     <Container className="md-container">
       <Head>
-        <title>ReactJS with react-bootstrap</title>
-        <link rel="icon" href="/favicon-32x32.png"/>
+        <title>graphErr</title>
+        {/* <link rel="icon" href="/favicon-32x32.png"/> */}
+
+        <link rel="icon" href="/graphErrLogo.svg"/>
       </Head>
       
       <NavBar/>
@@ -49,17 +37,36 @@ export default function Home() {
         <p style={{color: "#18341a"}}>
         </p>
         <Container>
-        <Container className="grid-gap">
-          <Card className="cards">The Problem: GraphQL is a strongly typed, introspective query language that solves the standard REST response issue of over- and under-fetching data. Even as multi-system queries are abstracted away, some of the benefits of the static, explicit architecture of a RESTful API are lost with GraphQL…
-          </Card>
-          <Card className="cards">Solution: There is currently no lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. graphErr is an un-opinionated, lightweight library that provides descriptive, debuggable error data to developers working with GraphQL in Deno. In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr will programmatically analyze your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.</Card>
-          <Card className="cards">Wow, we have the solution.</Card>
+          <Container className="grid-gap">
+            <Card className="cards">
+              <Card.Title>
+                The Problem:
+              </Card.Title>
+              <Card.Text>
+              GraphQL is a strongly typed, introspective query language that solves the standard REST response issue of over- and under-fetching data. Even as multi-system queries are abstracted away, some of the benefits of the static, explicit architecture of a RESTful API are lost with GraphQL…
+              </Card.Text>
+            </Card>
+            <Card className="cards">
+              <Card.Title>
+                The GraphErr Solution: 
+              </Card.Title>
+              <Card.Text>
+                A lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. 
+              </Card.Text>
+              </Card>
+            <Card className="cards" style={{padding: 8 + 'em, ' + 2 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
+              <Card.Title>
+                About GraphErr 
+              </Card.Title>
+              <Card.Text>
+                GraphErr is an un-opinionated, lightweight library that provides descriptive, debuggable error data to developers working with GraphQL in Deno. In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr will programmatically analyze your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.
+              </Card.Text>
+            </Card>
           </Container>
-
         </Container>
 
-        <Container id="links">
-          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95'}}>These are the links. Can we jump to them?</Card>
+        <Container id="links" className=''>
+          <Card body style={{padding: 8 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95', border: 'none', borderRadius: '20px'}}>These are the links!</Card>
         </Container>
 
         <Container id="team">
@@ -67,7 +74,7 @@ export default function Home() {
             We are Team GraphErr
           </Card>
 
-          <Row style={{display: 'flex', justifyContent: 'space-around', marginBottom: 8 + 'em'}}>
+          <Row style={{display: 'flex', justifyContent: 'space-around', marginBottom: 16 + 'em'}}>
               <Card className="text-center" style={{backgroundColor: '#F5F7F7', border: 'none'}}>
               <Card.Img variant="top" src="/ak.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
