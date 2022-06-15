@@ -52,7 +52,7 @@ export default function Home() {
                 A lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. 
               </Card.Text>
               </Card>
-            <Card className="cards" style={{paddingTop: 12 + 'em', paddingBottom: 13 + 'em', marginTop: 12 + 'em', marginBottom: 12 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
+            <Card className="cards" style={{paddingTop: 4 + 'em', paddingBottom: 5 + 'em', marginTop: 18 + 'em', marginBottom: 18 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
               <Card.Title style={{paddingBottom: 2 + 'em'}}>
                 About graphErr 
               </Card.Title>
@@ -69,12 +69,12 @@ export default function Home() {
         {/* <Container id="links" className='link'>
           <Card body style={{padding: 8 + 'em ' + 1 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95', border: 'none', borderRadius: '20px'}}>These are the links!</Card>
         </Container> */}
-        <Container id="team" style={{backgroundColor: '#dcf2eb', borderRadius: 20 + 'px', paddingTop: 1 + 'em', paddingBottom: 1 + 'em', marginTop: 12 + 'em'}}>
-          <Card className="text-center" style={{marginTop: 8 + 'em', marginBottom: 2 + 'em', color: '#18341a', fontSize: 2 + 'em', backgroundColor: '#dcf2eb', border: 'none'}}>
+        <Container id="team" style={{backgroundColor: '#dcf2eb', borderRadius: 20 + 'px', marginTop: 12 + 'em'}}>
+          <Card className="text-center" style={{paddingTop: 4 + 'em', marginTop: 8 + 'em', marginBottom: 2 + 'em', color: '#18341a', fontSize: 2 + 'em', backgroundColor: '#dcf2eb', border: 'none'}}>
             We are Team GraphErr
           </Card>
 
-          <Row style={{display: 'flex', justifyContent: 'space-around', marginBottom: 16 + 'em'}}>
+          <Row style={{display: 'flex', justifyContent: 'space-around', marginBottom: 12 + 'em', paddingBottom: 8 + 'em', }}>
               <Card className="text-center" style={{backgroundColor: '#dcf2eb', border: 'none'}}>
               <Card.Img variant="top" src="/ak.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
