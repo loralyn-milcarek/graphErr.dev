@@ -18,6 +18,13 @@ body {
   border-radius: 20px;
 }
 
+pre {
+  background-color: #F5F7F7;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 8px 0 8px 0;
+}
+
 .md-container {
   max-width: 800px;
   padding-top: 2rem;
