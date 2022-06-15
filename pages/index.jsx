@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Container className="lg-container">
       <Head>
-        <title>GraphErr</title>
+        <title>graphErr</title>
         {/* <link rel="icon" href="/favicon-32x32.png"/> */}
 
         <link rel="icon" href="/graphErrLogo.svg"/>
@@ -32,7 +32,7 @@ export default function Home() {
           <Container className="grid-gap">
             <Card className="cards">
               <Card.Title>
-                Why we built GraphErr
+                Why we built graphErr
               </Card.Title>
               <Card.Text>
               <br/>
@@ -44,7 +44,7 @@ export default function Home() {
             </Card>
             <Card className="cards">
               <Card.Title>
-                The GraphErr solution
+                The graphErr solution
               </Card.Title>
               <Card.Text>
                 <br/>
@@ -53,21 +53,21 @@ export default function Home() {
               </Card>
             <Card className="cards" style={{paddingTop: 12 + 'em', paddingBottom: 13 + 'em', marginTop: 12 + 'em', marginBottom: 12 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
               <Card.Title style={{paddingBottom: 2 + 'em'}}>
-                About GraphErr 
+                About graphErr 
               </Card.Title>
               <Card.Text>
                 GraphErr is an un-opinionated, lightweight library that provides descriptive, debuggable error data to developers working with GraphQL in Deno. 
                 <br/>              
                 <br/>
-                In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, GraphErr programmatically analyzes your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.
+                In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr programmatically analyzes your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.
               </Card.Text>
             </Card>
           </Container>
         </Container>
 
-        <Container id="links" className='link'>
+        {/* <Container id="links" className='link'>
           <Card body style={{padding: 8 + 'em ' + 1 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95', border: 'none', borderRadius: '20px'}}>These are the links!</Card>
-        </Container>
+        </Container> */}
 
         <Container id="team" style={{backgroundColor: '#dcf2eb', borderRadius: 20 + 'px', paddingTop: 1 + 'em', paddingBottom: 1 + 'em', marginTop: 12 + 'em'}}>
           <Card className="text-center" style={{marginTop: 8 + 'em', marginBottom: 2 + 'em', color: '#18341a', fontSize: 2 + 'em', backgroundColor: '#dcf2eb', border: 'none'}}>
@@ -79,11 +79,11 @@ export default function Home() {
               <Card.Img variant="top" src="/ak.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
                 <Card.Text href="https://github.com/avitacos">Avi</Card.Text>
+                <a href="https://linkedin.com/in/avi-kerson" style={{margin: 4 + 'px'}}>
+                  <Image src="/li.png" width="26px" height="22px"/>
+                </a>
                 <a href="https://github.com/avitacos" style={{margin: 4 + 'px'}}>
                   <Image src="/gh.png" width="22px" height="22px"/>
-                </a>
-                <a href="https://linkedin.com/in/avi-kerson" style={{margin: 4 + 'px'}}>
-                  <Image src="/li.png" width="22px" height="22px"/>
                 </a>
               </Card.Body>
               </Card>
@@ -93,11 +93,11 @@ export default function Home() {
               <Card.Body>
                 {/* <Card.Text href="https://github.com/loralyn-milcarek">Loralyn</Card.Text> */}
                 <Card.Text>Loralyn</Card.Text>
+                <a href="https://linkedin.com/in/loralyn-milcarek" style={{margin: 4 + 'px'}}>
+                  <Image src="/li.png" width="26px" height="22px"/>
+                </a>
                 <a href="https://github.com/loralyn-milcarek" style={{margin: 4 + 'px'}}>
                   <Image src="/gh.png" width="22px" height="22px"/>
-                </a>
-                <a href="https://linkedin.com/in/loralyn-milcarek" style={{margin: 4 + 'px'}}>
-                  <Image src="/li.png" width="22px" height="22px"/>
                 </a>
               </Card.Body>
             </Card>
@@ -105,11 +105,11 @@ export default function Home() {
               <Card.Img variant="top" src="/mc.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
                 <Card.Text href="https://github.com/maxwellcook">Max</Card.Text>
+                <a href="https://linkedin.com/in/maxwellcook" style={{margin: 4 + 'px'}}>
+                  <Image src="/li.png" width="26px" height="22px"/>
+                </a>
                 <a href="https://github.com/maxwellcook" style={{margin: 4 + 'px'}}>
                   <Image src="/gh.png" width="22px" height="22px"/>
-                </a>
-                <a href="https://linkedin.com/in/maxwellcook" style={{margin: 4 + 'px'}}>
-                  <Image src="/li.png" width="22px" height="22px"/>
                 </a>
               </Card.Body>
             </Card>
@@ -117,11 +117,11 @@ export default function Home() {
               <Card.Img variant="top" src="/ts.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
                 <Card.Text href="https://github.com/thomasseo1">Thomas</Card.Text>
+                <a href="https://linkedin.com/in/thomasjseo" style={{margin: 4 + 'px'}}>
+                  <Image src="/li.png" width="26px" height="22px"/>
+                </a>
                 <a href="https://github.com/thomasseo1" style={{margin: 4 + 'px'}}>
                   <Image src="/gh.png" width="22px" height="22px"/>
-                </a>
-                <a href="https://linkedin.com/in/thomasjseo" style={{margin: 4 + 'px'}}>
-                  <Image src="/li.png" width="22px" height="22px"/>
                 </a>
               </Card.Body>
             </Card>
@@ -129,11 +129,11 @@ export default function Home() {
               <Card.Img variant="top" src="/cs.png" style={{borderRadius: 50 + 'px', width: 100 + 'px', height: 100 + 'px'}}/>
               <Card.Body>
                 <Card.Text href="https://github.com/claysawyer">Clay</Card.Text>
+                <a href="https://linkedin.com/in/claysawyer" style={{margin: 4 + 'px'}}>
+                  <Image src="/li.png" width="26px" height="22px"/>
+                </a>
                 <a href="https://github.com/claysawyer" style={{margin: 4 + 'px'}}>
                   <Image src="/gh.png" width="22px" height="22px"/>
-                </a>
-                <a href="https://linkedin.com/in/claysawyer" style={{margin: 4 + 'px'}}>
-                  <Image src="/li.png" width="22px" height="22px"/>
                 </a>
               </Card.Body>
             </Card>
@@ -147,16 +147,41 @@ export default function Home() {
     
 
       <footer className="cntr-footer">
+        {/* <p style={{fontSize: '2 em'}}>Connect with graphErr
+        <br/>
+        </p>
         <Image src="/graphErrLogoType.svg" alt="graphErr Logo Type" width="100" height="100"/>
         <a href="https://github.com/oslabs-beta/graphErr" style={{margin: 12 + 'px'}}>
           <Image src="/gh.png" width="22px" height="22px"/>
         </a>
         <a href="https://linkedin.com/in/grapherr" style={{margin: 12 + 'px'}}>
-          <Image src="/li.png" width="22px" height="22px"/>
+          <Image src="/li.png" width="26px" height="22px"/>
         </a>
         <a href="https://deno.land" style={{margin: 12 + 'px'}}>
           <Image src="/li.png" width="22px" height="22px"/>
+        </a> */}
+
+
+<Nav className="justify-content-center" activeKey="/home">
+        <Nav.Item>
+          Connect with graphErr: 
+        </Nav.Item>
+        <Nav.Item>
+          <a href="https://github.com/oslabs-beta/graphErr" style={{margin: 12 + 'px'}}>
+            <Image src="/gh.png" width="22px" height="22px"/>
+          </a>
+        </Nav.Item>
+        <Nav.Item>
+        <a href="https://linkedin.com/company/grapherr" style={{margin: 12 + 'px'}}>
+          <Image src="/li.png" width="26px" height="22px"/>
         </a>
+        </Nav.Item>
+        <Nav.Item>
+        <a href="https://deno.land" style={{margin: 12 + 'px'}}>
+          <Image src="/de.png" width="26px" height="26px"/>
+        </a>
+        </Nav.Item>
+      </Nav>
       </footer>
 
     </Container>
