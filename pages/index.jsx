@@ -18,8 +18,14 @@ export default function Home() {
       <NavBar/>
 
       <Container>
-        <Container>
-          <Row style={{marginTop: 4 + 'em'}}>
+
+        <Container style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignContent: 'baseline', marginTop: 4 + 'em'}}>
+              <Card minWidth="200px" style={{border: 'none', backgroundColor: '#F5F7F7'}}><Card.Img src="/graphErrLogo.svg" alt="graphErr Logo" width="300" height="180"/></Card>
+            <Card style={{border: 'none', backgroundColor: '#F5F7F7', fontSize: 2 + 'em', textAlign: 'center', justifyContent: 'center'}}>Descriptive error handling library for GraphQL + Deno</Card>
+        </Container>
+        
+        {/* <Container>
+          <Row style={{display: 'flex', marginTop: 4 + 'em'}}>
             <Col xs={4} style={{paddingBottom: .5 + 'em'}}>
               <Image src="/graphErrLogo.svg" alt="graphErr Logo" width="300" height="180" />
             </Col>
@@ -28,7 +34,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        
+         */}
         <Container>
           <Container className="grid-gap">
             <Card className="cards">
@@ -50,11 +56,13 @@ export default function Home() {
               <Card.Text>
                 <br/>
                 A lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. 
+                <br/>
+                <Button href="https://deno.land/x/grapherr" className="install">Install graphErr</Button>
               </Card.Text>
               </Card>
               <Container align="center" style={{marginTop: 8 + 'em'}}>
-          <Image src="/scale.png" width="240px" height="138px"/>
-        </Container>
+                <Image src="/scale.png" width="240px" height="138px"/>
+              </Container>
             <Card className="cards" style={{paddingTop: 4 + 'em', paddingBottom: 5 + 'em', marginTop: 10 + 'em', marginBottom: 14 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
               <Card.Title style={{paddingBottom: 2 + 'em'}}>
                 About graphErr 
@@ -66,7 +74,7 @@ export default function Home() {
                 In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr programmatically analyzes your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.
                 <br/>
                 <br/>
-                Read more on Medium
+                <a href="https://medium.com/@clay.sa/introducing-grapherr-solving-graphqls-questionable-query-response-quirks-20122ebbc4cb">Read more on Medium</a>
               </Card.Text>
             </Card>
           </Container>

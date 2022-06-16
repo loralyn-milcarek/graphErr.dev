@@ -6,7 +6,7 @@ import FooterNav from '../components/footer.jsx';
 
 export default function Examples() {
   return (
-    <Container className="lg-container">
+    <Container className="md-container">
       <Head>
         <title>graphErr in action</title>
         <link rel="icon" href="/graphErrLogo.svg"/>
@@ -29,7 +29,7 @@ export default function Examples() {
 
                 </Card.Text>
               </Card>
-<br/>
+            <br/>
             <h1>Making a GraphQL Query </h1> 
             Here is an example query in the GraphQL playground:
             <pre><code>{
@@ -47,8 +47,9 @@ export default function Examples() {
             <Image className="ss" src="/qr1.png" alt="example query response" width="826" height="484"/>
 
             {/* <Image src="/qr1.png" alt="example query response" width="300" height="180" /> */}
-
-          <hr/>
+            <Container align="center" style={{marginTop: 8 + 'em', marginBottom: 8 + 'em'}}>
+          <Image src="/scale.png" width="240px" height="138px"/>
+        </Container>
           <h1>GraphErr Functionality </h1> 
           <br/>
           <br/>
@@ -80,12 +81,11 @@ export default function Examples() {
           <Image src="/qr5.png" alt="example query response" width="830" height="489" />
 
           <br/>
-          <hr/>
-  
 
         </Container>
-        
-
+        <Container align="center" style={{marginTop: 8 + 'em', marginBottom: 8 + 'em'}}>
+          <Image src="/scale.png" width="240px" height="138px"/>
+        </Container>
         <FooterNav/>
 
       </Container>
