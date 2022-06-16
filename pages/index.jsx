@@ -52,7 +52,10 @@ export default function Home() {
                 A lightweight, free library to generate readable, actionable error data that enables query debugging when using GraphQL in Deno. 
               </Card.Text>
               </Card>
-            <Card className="cards" style={{paddingTop: 4 + 'em', paddingBottom: 5 + 'em', marginTop: 18 + 'em', marginBottom: 18 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
+              <Container align="center" style={{marginTop: 8 + 'em'}}>
+          <Image src="/scale.png" width="240px" height="138px"/>
+        </Container>
+            <Card className="cards" style={{paddingTop: 4 + 'em', paddingBottom: 5 + 'em', marginTop: 10 + 'em', marginBottom: 14 + 'em', color: '#F5F7F7', backgroundColor: '#59af95'}}>
               <Card.Title style={{paddingBottom: 2 + 'em'}}>
                 About graphErr 
               </Card.Title>
@@ -61,14 +64,16 @@ export default function Home() {
                 <br/>              
                 <br/>
                 In addition to expanded and illustrative error responses pulled directly from the formal GraphQL spec sheet, graphErr programmatically analyzes your GraphQL queries, adding a post-processing layer of error handling that reduces the conceptual burden on the developer by providing many of the benefits of RESTful API architecture.
+                <br/>
+                <br/>
+                Read more on Medium
               </Card.Text>
             </Card>
           </Container>
         </Container>
-
-        {/* <Container id="links" className='link'>
-          <Card body style={{padding: 8 + 'em ' + 1 + 'em', marginTop: 8 + 'em', color: 'white', backgroundColor: '#59af95', border: 'none', borderRadius: '20px'}}>These are the links!</Card>
-        </Container> */}
+        <Container align="center">
+          <Image src="/scale.png" width="240px" height="138px"/>
+        </Container>
         <Container id="team" style={{backgroundColor: '#dcf2eb', borderRadius: 20 + 'px', marginTop: 12 + 'em'}}>
           <Card className="text-center" style={{paddingTop: 4 + 'em', marginTop: 8 + 'em', marginBottom: 2 + 'em', color: '#18341a', fontSize: 2 + 'em', backgroundColor: '#dcf2eb', border: 'none'}}>
             We are Team GraphErr
@@ -141,8 +146,11 @@ export default function Home() {
 
           </Row>
         </Container>
-
+        <Container align="center">
+          <Image src="/scale.png" width="240px" height="138px"/>
+        </Container>
       </Container>
+      
       <FooterNav/>
 
     </Container>
